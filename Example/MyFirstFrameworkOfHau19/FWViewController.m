@@ -7,7 +7,7 @@
 //
 
 #import "FWViewController.h"
-
+#import <MyFirstFrameworkOfHau19/FWLogger.h>
 @interface FWViewController ()
 
 @end
@@ -17,7 +17,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    FWLogger *logger = [[FWLogger alloc] init];
+    [logger printer:@"Hello"];
+    
+    NSBundle *frameworkBundle = [NSBundle bundleForClass:[FWLogger class]];
+    NSString *path = [frameworkBundle pathForResource:@"Resources" ofType:@"bundle"];
+    NSBundle *resourcesBundle = [NSBundle bundleWithPath:path];
+    UIImage *image = [UIImage imageNamed:@"flower.jpg" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
+
+    NSLog(@"%@", image);
+
 }
 
 - (void)didReceiveMemoryWarning

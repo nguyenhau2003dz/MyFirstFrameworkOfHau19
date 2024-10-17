@@ -1,0 +1,16 @@
+PODS:
+  - MyFirstFrameworkOfHau19 (0.1.0)
+
+DEPENDENCIES:
+  - MyFirstFrameworkOfHau19 (from `../`)
+
+EXTERNAL SOURCES:
+  MyFirstFrameworkOfHau19:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MyFirstFrameworkOfHau19: df465bd9c1bf990f2909036dbfa6fc82f03eef1a
+
+PODFILE CHECKSUM: 9a4b7de87b438028ccc4c7de1858e15ad91c177b
+
+COCOAPODS: 1.15.2
