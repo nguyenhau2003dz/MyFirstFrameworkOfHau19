@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MyFirstFrameworkOfHau19_Example' do
+  pod 'MyFirstFrameworkOfHau19', :path => '../'
+
+  target 'MyFirstFrameworkOfHau19_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
